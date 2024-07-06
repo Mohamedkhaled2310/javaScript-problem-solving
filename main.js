@@ -153,7 +153,21 @@ function calculatePercentageAndGrade() {
     document.getElementById("span").innerHTML = `Percentage: ${percentage}<br>Grade: ${grade}`;
 }
 
-
+function maxSwitch(){
+    var num1 = Number(prompt("Enter the 1st number :"));
+    var num2 = Number(prompt("Enter the 2nd number :"));
+    // var temp =num1;
+    switch(true){
+        case (num1>num2):
+            document.getElementById("span").innerHTML= num1;
+        break;
+        case (num2>num1):
+            document.getElementById("span").innerHTML = num2
+        break;
+        default:
+            document.getElementById("span").innerHTML="inavail Number (;";
+    }
+}
 
 function printNumbers1To10() {
     var result = "";
